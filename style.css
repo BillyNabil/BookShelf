@@ -1,0 +1,131 @@
+body {
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 1) 39%,
+    rgba(29, 14, 14, 1) 100%
+  );
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+}
+
+h1,
+h2 {
+  color: #ff4c4c;
+  text-align: center;
+  font-size: 2em;
+}
+
+button {
+  background-color: #ff4c4c;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 7px;
+}
+
+button:hover {
+  background-color: #ff1a1a;
+}
+
+input[type="text"],
+input[type="number"] {
+  background-color: #1f1f1f;
+  color: #ffffff;
+  border: 1px solid #ff4c4c;
+  padding: 10px;
+  margin: 5px 0;
+  width: calc(100% - 22px);
+  border-radius: 7px;
+}
+
+section {
+  margin-top: 20px;
+  background-color: #141414;
+  padding: 20px;
+  width: 70%;
+  max-width: 800px;
+  border: 1px solid #ff4c4c;
+  border-radius: 7px;
+  margin-bottom: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+div[data-testid="bookItem"] {
+  background-color: #1f1f1f;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 1cqb;
+  width: 100%;
+}
+
+.judul {
+  font-style: italic;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  h1,
+  h2 {
+    font-size: 1.5em;
+  }
+
+  section {
+    width: 95%;
+    padding: 15px;
+  }
+
+  button {
+    padding: 8px 16px;
+  }
+
+  input[type="text"],
+  input[type="number"] {
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1,
+  h2 {
+    font-size: 1.2em;
+  }
+
+  section {
+    padding: 10px;
+  }
+
+  button {
+    width: 100%;
+  }
+}
+
+footer {
+  font-size: large;
+  font-weight: 200;
+  background-color: #1f1f1f;
+  color: #ffffff;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  border-top: 1px solid #ff4c4c;
+  margin-top: 20px;
+}
